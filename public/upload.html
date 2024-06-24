@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload File</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload a File</h1>
+        <div id="dropZone" class="drop-zone">
+            <p>Drag & Drop files here or click to select files</p>
+            <input type="file" id="fileInput" name="file" style="display: none;">
+        </div>
+        <p id="fileName" style="display: none;">No file selected</p>
+        <button type="button" id="uploadBtn" style="display: none;">Upload</button>
+        <progress id="progressBar" value="0" max="100" style="display: none;"></progress>
+        <p id="progressPercent"></p>
+        <p id="sizeText"></p>
+        <p id="speedText"></p>
+        <button onclick="location.href='/'">Back to Home</button>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
