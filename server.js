@@ -8,6 +8,20 @@ const readline = require('readline');
 const app = express();
 const upload = multer({ dest: 'uploads/' });
 
+// Function to create directories if they do not exist
+const createDirectories = () => {
+    const directories = ['uploads', 'downloads'];
+    directories.forEach(dir => {
+        if (!fs.existsSync(dir)) {
+            fs.mkdirSync(dir);
+            console.log(`Directory ${dir} created.`);
+        }
+    });
+};
+
+// Call the function to create directories at startup
+createDirectories();
+
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
