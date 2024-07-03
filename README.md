@@ -1,6 +1,6 @@
-# File Server
+# Home File Server
 
-File Server is a simple file server application built with Node.js. It allows users to upload and download files either on a local network or online using UPnP (Universal Plug and Play).
+Home File Server is a simple file server application built with Node.js. It allows users to upload and download files either on a local network or online using UPnP (Universal Plug and Play).
 
 ## Features
 
