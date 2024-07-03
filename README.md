@@ -63,7 +63,7 @@ Home File Server is a simple file server application built with Node.js. It allo
 ## Project Structure
 
 ```plaintext
-File Server - main/
+Home-File-Server-main/
 │
 ├── public/
 │   ├── css/
